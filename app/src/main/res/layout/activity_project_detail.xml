@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#3A64BA"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.wikagedung.myyusuf.myapplication.ProjectDetailActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sept, 2016"
+                android:id="@+id/month_select_label"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:padding="0dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/project_detail_scroll_view"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fillViewport="false"
+            android:padding="0dp"
+            android:scrollIndicators="none">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="2500dp"
+                android:descendantFocusability="blocksDescendants"
+                android:background="#CCCCCC">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="Info Proyek"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:minWidth="25dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/project_name_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            tools:text="Project Name"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <TextView
+                            android:id="@+id/project_address_text_view"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            tools:text="Project Address"
+                            android:textColor="#9D9D9D"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="Omzet Kontrak"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:minWidth="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="OK"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:minWidth="25dp"/>
+
+                            <TextView
+                                android:id="@+id/ok_text_view"
+                                android:layout_width="230dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,000,000,000.00"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Mulai"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Selesai"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/project_start_date_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-10-2016"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/project_end_date_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-11-2016"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="BAST"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:minWidth="25dp"
+                            android:textStyle="bold" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/bast_recycler_view">
+                        </android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="Tim Proyek"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:minWidth="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Manager Proyek"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:minWidth="25dp"/>
+
+                            <TextView
+                                android:id="@+id/project_manager_text_view"
+                                android:layout_width="230dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,000,000,000.00"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Kasie Keu"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Kasie Kom"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/kasie_keu_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-10-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/kasie_kom_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-11-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Pelut"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Kasie Enjinering"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/pelut_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-10-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/kasie_enjinering_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-11-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="Progress"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:minWidth="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/ra_progress_percentage_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Ra"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/ri_progress_percentage_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Ri"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/ra_progress_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-10-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/ri_progress_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-11-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Piutang Retensi"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Tagihan Bruto"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/piutang_retensi_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-10-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/tagihan_bruto_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-11-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Piutang Usaha"
+                                android:textColor="#000000"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/piutang_usaha_text_view"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                tools:text="1,234,567,89"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:text="-"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1.9"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text=" &lt; 30"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/piutang_usaha_text_view_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                tools:text="1,234,567,89"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:text="-"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1.9"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="31 - 90"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/piutang_usaha_text_view_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                tools:text="1,234,567,89"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:text="-"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1.9"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="&gt; 90"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/piutang_usaha_text_view_4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                tools:text="1,234,567,89"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:text="-"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1.9"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Salah Buku"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="0.1"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/piutang_usaha_text_view_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                tools:text="1,234,567,89"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:text="-"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1.9"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="Laba Kotor"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:minWidth="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Ra"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Ri"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/laba_kotor_ra_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,234,567.00"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/laba_kotor_ri_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,234,567.00"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="ST"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/laba_kotor_st_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,234,567.00"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Persediaan"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Cash Flow"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/persediaan_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-10-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/cash_flow_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="21-11-2016"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="Score Card"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:minWidth="25dp"
+                            android:textStyle="bold" />
+
+                        <WebView
+                            android:id="@+id/score_card_web_view"
+                            android:layout_width="match_parent"
+                            android:layout_margin="10dp"
+                            android:layout_height="210dp"></WebView>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="19sp"
+                            android:text="Manajemen Risiko"
+                            android:textColor="#000000"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:minWidth="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="Nilai Risiko Ekstrim"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/nilai_risiko_ekstrim_text_view"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,234,567.00"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="0dp"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="QMSL"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="SIL"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/qmsl_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,234,567.00"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                            <TextView
+                                android:id="@+id/sil_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,234,567.00"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="19sp"
+                                android:text="5R"
+                                android:textColor="#000000"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <TextView
+                                android:id="@+id/lima_r_text_view"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                tools:text="1,234,567.00"
+                                android:textColor="#A7A7A7"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coor_layout">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/pd_float_comment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_comment_white_24dp"
+            app:layout_anchorGravity="center"
+            android:clickable="true"
+            app:backgroundTint="#3A64BA"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

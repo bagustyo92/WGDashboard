@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="com.wikagedung.myyusuf.myapplication.MainActivity"
+    android:background="#3A64BA">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sept, 2016"
+                android:id="@+id/month_select_label"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:padding="0dp"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/dashboard_scroll_view"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fillViewport="false"
+            android:padding="0dp"
+            android:scrollIndicators="none">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="1333dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:id="@+id/dots"
+                    android:paddingRight="11dp"
+                    android:layout_gravity="right"
+                    android:gravity="right">
+
+                </LinearLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/chart_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="304dp">
+                </android.support.v4.view.ViewPager>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/month_select_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp">
+                </android.support.v4.view.ViewPager>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recycler_list">
+                </android.support.v7.widget.RecyclerView>
+
+
+
+                <!--<android.support.v4.view.ViewPager-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<android.support.v4.view.PagerTitleStrip-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="top" />-->
+
+                <!--</android.support.v4.view.ViewPager>-->
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

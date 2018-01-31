@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#3A64BA"
+    tools:context="com.wikagedung.myyusuf.myapplication.ProjectActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:id="@+id/test_layout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sept, 2016"
+                android:id="@+id/month_select_label"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:padding="0dp"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/project_recycler_view">
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:padding="10dp"
+            android:background="#ffffff"
+            android:weightSum="2">
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:text="Filter: All, Sort: Terlambat"-->
+                <!--android:id="@+id/filter_label"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:padding="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="#3A64BA"-->
+                <!--android:layout_weight="1.92"/>-->
+
+            <Spinner
+                android:id="@+id/project_filter_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="0.96"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:background="#3A64BA"
+                android:textColor="#ffffff"
+                />
+
+            <Spinner
+                android:id="@+id/project_sort_spinner"
+                android:layout_width="0dp"
+                android:layout_weight="0.96"
+                android:layout_height="match_parent"
+                android:textSize="22sp"
+                android:background="#3A64BA"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="6dp"
+                />
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:id="@+id/sort_button"
+                android:background="@drawable/sort_down"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="0.08"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

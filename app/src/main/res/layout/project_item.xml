@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    card_view:cardElevation="0dp"
+    card_view:cardMaxElevation="0dp"
+    android:background="#ECECEC">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/project_circle_image"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="-"
+                android:textColor="#000000"
+                android:minWidth="25dp"
+                tools:text="Condominium the accent"
+                android:id="@+id/project_label_1"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:text="-"
+                android:textColor="#000000"
+                android:minWidth="25dp"
+                tools:text="Divisi Operasi 1"
+                android:id="@+id/project_label_2"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/manager_proyek_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="MP"
+                android:textColor="#000000"
+                android:minWidth="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="17dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Laba Bersih"
+                android:textColor="#000000"
+                android:minWidth="25dp"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Rencana"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_3"
+                        tools:text="4,329,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="Deviasi"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_5"
+                        tools:text="4,329,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="BAD"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_7"
+                        tools:text="4,329,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="Ra Progress"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_9"
+                        tools:text="90%"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_12"
+                        tools:text="90,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="Piutang Usaha"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_14"
+                        tools:text="90%"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="Tagihan Bruto"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_16"
+                        tools:text="90%"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="Cash Flow"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_18"
+                        tools:text="90%"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="Realisasi"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_4"
+                        tools:text="4,042,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="PDP"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_6"
+                        tools:text="4,042,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="OK"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_8"
+                        tools:text="4,042,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="Ri Progress"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:minWidth="25dp"
+                            android:id="@+id/project_label_10"
+                            tools:text="100.00%"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="-"
+                            android:textColor="#000000"
+                            android:minWidth="25dp"
+                            android:id="@+id/project_label_11"
+                            tools:text="100.00%"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_13"
+                        tools:text="4,042,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="Piutang Retensi"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_15"
+                        tools:text="4,042,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textSize="16sp"
+                        android:text="Persediaan"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:text="-"
+                        android:textColor="#000000"
+                        android:minWidth="25dp"
+                        android:id="@+id/project_label_17"
+                        tools:text="4,042,000,000.00"
+                        android:layout_marginLeft="10dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

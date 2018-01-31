@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="project_sort_array">
+        <item>Terlambat</item>
+        <item>Margin</item>
+        <item>Piutang Usaha</item>
+        <item>Piutang Retensi</item>
+        <item>Tagihan Bruto</item>
+        <item>Persediaan</item>
+        <item>Cash Flow</item>
+        <item>PDP</item>
+    </string-array>
+</resources>

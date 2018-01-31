@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:background="#3A64BA"
+    tools:context="com.wikagedung.myyusuf.myapplication.NetProfitActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sept, 2016"
+                android:id="@+id/month_select_label"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:padding="0dp"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:id="@+id/dots"
+                android:paddingRight="11dp"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/net_profit_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coor_layout">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/float_comment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_comment_white_24dp"
+            app:layout_anchorGravity="center"
+            android:clickable="true"
+            app:backgroundTint="#3A64BA"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

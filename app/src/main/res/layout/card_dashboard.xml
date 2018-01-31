@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    card_view:cardElevation="0dp"
+    card_view:cardMaxElevation="0dp"
+        android:background="#ECECEC">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/equal_trend"
+            android:id="@+id/card_dashboard_image_1"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:layout_marginLeft="11dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Tomorrow"
+                android:textColor="#000000"
+                android:id="@+id/card_dashboard_label_1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#595959"
+                android:text="Clear"
+                android:id="@+id/card_dashboard_label_2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="11111"
+                android:layout_weight="1"
+                android:id="@+id/card_dashboard_label_3"
+                android:gravity="right" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:textColor="#595959"
+                android:text="22222"
+                android:layout_weight="1"
+                android:id="@+id/card_dashboard_label_4"
+                android:textAlignment="gravity"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/disclosure"
+            android:id="@+id/disclosure_image_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

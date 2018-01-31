@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wikagedung.myyusuf.myapplication.fragments.SalesChartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="-"
+                    android:id="@+id/sales_chart_caption"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textAlignment="center"
+                    android:padding="0dp"
+                    android:layout_marginLeft="22dp"
+                    android:gravity="left" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="(Dalam M)"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:padding="0dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Sales"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:padding="0pt"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="96dp"
+                    android:layout_height="36dp"
+                    android:text="Details"
+                    android:id="@+id/sales_chart_button"
+                    android:textColor="#3A64BA"
+                    android:padding="0dp"
+                    android:layout_marginTop="11dp"
+                    android:textSize="18dp"
+                    android:background="@drawable/chart_button"
+                    android:textAllCaps="false"/>
+
+                <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:text="Details"-->
+                <!--android:id="@+id/month_select_label"-->
+                <!--android:textSize="20dp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:padding="3pt"-->
+                <!--android:gravity="center_horizontal" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="9dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:background="@drawable/yellow_circle"
+                android:layout_marginRight="7dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Realisasi"
+                android:id="@+id/textView2"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:background="@drawable/blue_circle_2"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="11dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Rencana"
+                android:id="@+id/textView3"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/sales_chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

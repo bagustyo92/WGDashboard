@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="project_filter_array">
+        <item>All</item>
+        <item>Divisi 1</item>
+        <item>Divisi 2</item>
+        <item>Divisi 3</item>
+        <item>Divisi Property</item>
+    </string-array>
+</resources>
